@@ -26,6 +26,10 @@ title: Muhammad Taky Tahmid
     color: white;
     margin: 0 5px;
     border-radius: 5px;
+    transition: background 0.3s;
+  }
+  .tab:hover {
+    background: #1abc9c;
   }
   .tab.active {
     background: #2c3e50;
@@ -42,6 +46,29 @@ title: Muhammad Taky Tahmid
   .tab-content.active {
     display: block;
   }
+  .tab-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .contact-info a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  ul li {
+    background: #ecf0f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  ul li:hover {
+    background: #bdc3c7;
+  }
 </style>
 
 <h1>Muhammad Taky Tahmid</h1>
@@ -57,10 +84,12 @@ title: Muhammad Taky Tahmid
 </div>
 
 <div id="about" class="tab-content active">
+  <img src="https://via.placeholder.com/800x200.png?text=About+Me" alt="About Me">
   <p>I am an experienced consultant, urban planner, and environmental economist with a hands-on background in urban and city planning, urban management, master plan, and development plan preparation. I have expertise in GIS, remote sensing, water modeling, and environmental assessments, including site clearance and environmental clearance processes.</p>
 </div>
 
 <div id="education" class="tab-content">
+  <img src="https://via.placeholder.com/800x200.png?text=Education" alt="Education">
   <ul>
     <li>Bachelor of Urban and Regional Planning from Bangladesh University of Engineering and Technology (2010-2015)</li>
     <li>Masters in Environmental Economics from Dhaka School of Economics, University of Dhaka (2017-2019)</li>
@@ -68,6 +97,7 @@ title: Muhammad Taky Tahmid
 </div>
 
 <div id="experience" class="tab-content">
+  <img src="https://via.placeholder.com/800x200.png?text=Experience" alt="Experience">
   <ul>
     <li><strong>Marian R. Okie Fellow</strong> at University of Delaware, School of Marine Science and Policy (August 2022 - Present)</li>
     <li><strong>Lecturer</strong> at Dhaka School of Economics, University of Dhaka (April 2021 - August 2022)</li>
@@ -81,6 +111,7 @@ title: Muhammad Taky Tahmid
 </div>
 
 <div id="skills" class="tab-content">
+  <img src="https://via.placeholder.com/800x200.png?text=Skills" alt="Skills">
   <ul>
     <li>Analytical Skills</li>
     <li>GIS Tool-based Analysis</li>
@@ -92,12 +123,14 @@ title: Muhammad Taky Tahmid
 </div>
 
 <div id="certifications" class="tab-content">
+  <img src="https://via.placeholder.com/800x200.png?text=Certifications" alt="Certifications">
   <ul>
     <li>Secondary School Certificate</li>
   </ul>
 </div>
 
 <div id="projects" class="tab-content">
+  <img src="https://via.placeholder.com/800x200.png?text=Projects" alt="Projects">
   <ul>
     <li><strong>Sonagazi Solar Power LTD. (50 MW AC) Solar Park at Sonagazi, Feni</strong>: Chief Consultant and Urban Planner - Provided consultancy services for site clearance, environmental clearance, and detailed topographic survey.</li>
     <li><strong>Faridpur Sadar Upazila Development Plan</strong>: Project Coordinator - Managed the development plan preparation, introduced smart water and sanitation solutions, and coordinated data collection and analysis.</li>
@@ -105,6 +138,7 @@ title: Muhammad Taky Tahmid
 </div>
 
 <div id="contact" class="tab-content">
+  <img src="https://via.placeholder.com/800x200.png?text=Contact" alt="Contact">
   <p>Feel free to reach out to me through email or LinkedIn for any professional inquiries or collaborations.</p>
   <p>Email: <a href="mailto:takyurp09@gmail.com">takyurp09@gmail.com</a></p>
   <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammad-taky-tahmid-482397100/">Muhammad Taky Tahmid</a></p>
