@@ -5,14 +5,15 @@ title: Muhammad Taky Tahmid
 
 <style>
   body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f5f5f5, #dfe9f3);
     color: #333;
   }
   h1 {
-    color: #2c3e50;
+    color: #1abc9c;
     text-align: center;
     margin-top: 50px;
+    font-size: 3em;
   }
   .tabs {
     display: flex;
@@ -20,40 +21,43 @@ title: Muhammad Taky Tahmid
     margin-top: 20px;
   }
   .tab {
-    padding: 10px 20px;
+    padding: 15px 25px;
     cursor: pointer;
-    background: #16a085;
+    background: #2980b9;
     color: white;
-    margin: 0 5px;
-    border-radius: 5px;
+    margin: 0 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
     transition: background 0.3s;
   }
   .tab:hover {
-    background: #1abc9c;
+    background: #3498db;
   }
   .tab.active {
-    background: #2c3e50;
+    background: #e74c3c;
   }
   .tab-content {
     display: none;
     max-width: 800px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 30px;
     background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    animation: fadeIn 0.5s;
   }
   .tab-content.active {
     display: block;
   }
   .tab-content img {
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: 15px;
     margin-bottom: 20px;
   }
   .contact-info a {
-    color: #3498db;
+    color: #e74c3c;
     text-decoration: none;
+    font-weight: bold;
   }
   ul {
     list-style-type: none;
@@ -61,13 +65,17 @@ title: Muhammad Taky Tahmid
   }
   ul li {
     background: #ecf0f1;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
     transition: background 0.3s;
   }
   ul li:hover {
     background: #bdc3c7;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 </style>
 
