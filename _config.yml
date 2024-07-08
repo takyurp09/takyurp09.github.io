@@ -1,0 +1,19 @@
+title: Muhammad Taky Tahmid
+description: My personal portfolio and blog site.
+baseurl: "" # the subpath of your site, e.g., /blog
+url: "http://yourusername.github.io/my-jekyll-site" # replace with your GitHub Pages URL
+theme: minima
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Jekyll theme settings
+minima:
+  skin: classic
+  header: true
+  social_links: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
