@@ -120,7 +120,10 @@ title: Muhammad Taky Tahmid
 </p>
 <p>
   Let's embark on this journey together, learning and growing along the way!
-</p>
+  <p>
+    Stay Tuned !
+  </p>
+
 
  
 </p>
@@ -128,8 +131,9 @@ title: Muhammad Taky Tahmid
 
 <div id="education" class="tab-content">
   <ul>
-    <li>Bachelor of Urban and Regional Planning from Bangladesh University of Engineering and Technology (2010-2015)</li>
-    <li>Masters in Environmental Economics from Dhaka School of Economics, University of Dhaka (2017-2019)</li>
+    <li> <b style="color: #009BFF;">PhD Student:</b> Environmental Economics, University of Delaware ( 2022 Onward) <li>
+    <li> Masters in Environmental Economics from Dhaka School of Economics, University of Dhaka (2017-2019)</li>
+    <li> Bachelor of Urban and Regional Planning from Bangladesh University of Engineering and Technology (2010-2015)</li>
   </ul>
 </div>
 
