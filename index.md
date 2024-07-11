@@ -119,7 +119,7 @@ title: Muhammad Taky Tahmid
 <div class="header">
   <h1>Muhammad Taky Tahmid</h1>
   <div class="profile-picture">
-    <img src="https://drive.google.com/uc?export=view&id=1gvCHANViXy_33rLT7cP0GNQpLcMeQYTM" alt="Muhammad Taky Tahmid">
+    <img src="https://media.licdn.com/dms/image/D4E03AQHkcsxKJ-mhgA/profile-displayphoto-shrink_200_200/0/1665463231322?e=2147483647&v=beta&t=Q7iU0XPl9X3djGah8jyzv5wvsRXrbTAQENcWzFYWILo" alt="Muhammad Taky Tahmid">
   </div>
 </div>
 
