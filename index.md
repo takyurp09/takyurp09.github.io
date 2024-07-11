@@ -164,15 +164,4 @@ title: Muhammad Taky Tahmid
   <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammad-taky-tahmid-482397100/">Muhammad Taky Tahmid</a></p>
 </div>
 
-<script>
-  function showTab(tabId) {
-    document.querySelectorAll('.tab-content').forEach(content => {
-      content.classList.remove('active');
-    });
-    document.querySelectorAll('.tab').forEach(tab => {
-      tab.classList.remove('active');
-    });
-    document.getElementById(tabId).classList.add('active');
-    document.querySelector('.tab[onclick="showTab(\'' + tabId + '\')"]').classList.add('active');
-  }
-</script>
+<scrip
