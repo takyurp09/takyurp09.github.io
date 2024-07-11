@@ -14,7 +14,7 @@ title: Muhammad Taky Tahmid
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(45deg, #1abc9c, #3498db, #9b59b6, #e74c3c);
     background-size: 400% 400%;
-    animation: gradientAnimation 50s ease infinite;
+    animation: gradientAnimation 15s ease infinite;
     color: #ffffff;
   }
 
@@ -111,6 +111,7 @@ title: Muhammad Taky Tahmid
   .profile-picture img {
     border-radius: 50%;
     max-width: 150px;
+    height: auto;
     margin-right: 20px;
   }
 </style>
