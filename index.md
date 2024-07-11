@@ -6,7 +6,7 @@ title: Muhammad Taky Tahmid
 <style>
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('https://drive.google.com/file/d/1gv8v2Wis-CuSqWaI15B7qndQyKvZRKG7') no-repeat center center fixed;
+    background: url('https://drive.google.com/uc?export=view&id=1gv8v2Wis-CuSqWaI15B7qndQyKvZRKG7') no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
   }
