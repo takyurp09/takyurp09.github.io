@@ -8,11 +8,11 @@ theme: jekyll-theme-architect
 markdown: kramdown
 highlighter: rouge
 
-# Jekyll theme settings
-minima:
-  skin: classic
-  header: true
-  social_links: true
+# Jekyll theme settings (No additional settings needed for jekyll-theme-architect)
+# minima:
+#   skin: classic
+#   header: true
+#   social_links: true
 
 plugins:
   - jekyll-feed
