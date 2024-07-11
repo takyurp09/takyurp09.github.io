@@ -12,9 +12,8 @@ title: Muhammad Taky Tahmid
 
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(45deg, #1abc9c, #3498db, #9b59b6, #e74c3c);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
+    background: url('https://images.unsplash.com/photo-1609692029268-f9ba9b2a728b?fm=jpg&w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFkZHklMjBmaWVsZHxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
     color: #ffffff;
   }
 
@@ -119,7 +118,7 @@ title: Muhammad Taky Tahmid
 <div class="header">
   <h1>Muhammad Taky Tahmid</h1>
   <div class="profile-picture">
-    <img src="https://media.licdn.com/dms/image/D4E03AQHkcsxKJ-mhgA/profile-displayphoto-shrink_200_200/0/1665463231322?e=2147483647&v=beta&t=Q7iU0XPl9X3djGah8jyzv5wvsRXrbTAQENcWzFYWILo" alt="Muhammad Taky Tahmid">
+    <img src="https://drive.google.com/uc?export=view&id=1gvCHANViXy_33rLT7cP0GNQpLcMeQYTM" alt="Muhammad Taky Tahmid">
   </div>
 </div>
 
