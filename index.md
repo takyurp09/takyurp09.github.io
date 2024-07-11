@@ -111,7 +111,20 @@ title: Muhammad Taky Tahmid
 </div>
 
 <div id="about" class="tab-content active">
-  <p>I am an experienced consultant, urban planner, and environmental economist with a hands-on background in urban and city planning, urban management, master plan, and development plan preparation. I have expertise in GIS, remote sensing, water modeling, and environmental assessments, including site clearance and environmental clearance processes.</p>
+  <p> Welcome to My Site!
+
+Hello and welcome! I'm Muhammad Taky Tahmid, a PhD student in Environmental Economics at the University of Delaware. My passion lies in exploring the profound impacts of climate change on society, particularly within the realms of agriculture and national output. I'm also on an exciting journey to integrate machine learning into my climate change research, blending innovation with vital environmental studies.
+
+I absolutely love to code and am proficient in both R and Python. But more than anything, I love to teach and share knowledge. Here, you'll find a showcase of my research, experiences, and tutorials. I'll also be sharing insightful blogs, so stay tuned!
+
+Let's embark on this journey together, learning and growing along the way!
+
+
+
+
+
+
+</p>
 </div>
 
 <div id="education" class="tab-content">
