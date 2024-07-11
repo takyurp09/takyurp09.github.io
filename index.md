@@ -103,7 +103,8 @@ title: Muhammad Taky Tahmid
 <div class="tabs">
   <div class="tab active" onclick="showTab('about')">About Me</div>
   <div class="tab" onclick="showTab('education')">Education</div>
-  <div class="tab" onclick="showTab('experience')">Experience</div>
+  <div class="tab" onclick="showTab('academic experience')">Academic & Research Experience</div>
+  <div class="tab" onclick="showTab('professional experience')">Professional Experience</div>
   <div class="tab" onclick="showTab('skills')">Skills</div>
   <div class="tab" onclick="showTab('certifications')">Certifications</div>
   <div class="tab" onclick="showTab('projects')">Projects</div>
