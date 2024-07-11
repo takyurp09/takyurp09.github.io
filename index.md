@@ -4,23 +4,33 @@ title: Muhammad Taky Tahmid
 ---
 
 <style>
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('https://drive.google.com/uc?export=view&id=1gv8v2Wis-CuSqWaI15B7qndQyKvZRKG7') no-repeat center center fixed;
-    background-size: cover;
+    background: linear-gradient(45deg, #1abc9c, #3498db, #9b59b6, #e74c3c);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
     color: #ffffff;
   }
+
   h1 {
     color: #ffffff;
     text-align: left;
     margin-top: 50px;
     font-size: 2.5em;
   }
+
   .tabs {
     display: flex;
     justify-content: center;
     margin-top: 20px;
   }
+
   .tab {
     padding: 15px 25px;
     cursor: pointer;
@@ -31,12 +41,15 @@ title: Muhammad Taky Tahmid
     font-size: 1.2em;
     transition: background 0.3s;
   }
+
   .tab:hover {
     background: rgba(52, 152, 219, 0.8);
   }
+
   .tab.active {
     background: rgba(231, 76, 60, 0.8);
   }
+
   .tab-content {
     display: none;
     max-width: 800px;
@@ -48,23 +61,28 @@ title: Muhammad Taky Tahmid
     animation: fadeIn 0.5s;
     color: #ffffff;
   }
+
   .tab-content.active {
     display: block;
   }
+
   .tab-content img {
     max-width: 100%;
     border-radius: 15px;
     margin-bottom: 20px;
   }
+
   .contact-info a {
     color: #e74c3c;
     text-decoration: none;
     font-weight: bold;
   }
+
   ul {
     list-style-type: none;
     padding: 0;
   }
+
   ul li {
     background: rgba(236, 240, 241, 0.8);
     margin: 10px 0;
@@ -73,19 +91,23 @@ title: Muhammad Taky Tahmid
     transition: background 0.3s;
     color: #333;
   }
+
   ul li:hover {
     background: rgba(189, 195, 199, 0.8);
   }
+
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
   }
+
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
   }
+
   .profile-picture img {
     border-radius: 50%;
     max-width: 150px;
