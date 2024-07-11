@@ -118,7 +118,7 @@ title: Muhammad Taky Tahmid
 <div class="header">
   <h1>Muhammad Taky Tahmid</h1>
   <div class="profile-picture">
-    <img src="https://via.placeholder.com/150" alt="Muhammad Taky Tahmid">
+    <img src="https://drive.google.com/uc?export=view&id=1gvCHANViXy_33rLT7cP0GNQpLcMeQYTM" alt="Muhammad Taky Tahmid">
   </div>
 </div>
 
