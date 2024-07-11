@@ -101,77 +101,49 @@ title: Muhammad Taky Tahmid
 </div>
 
 <div class="tabs">
-  <div class="tab active" onclick="showTab('about')">About Me</div>
-  <div class="tab" onclick="showTab('education')">Education</div>
-  <div class="tab" onclick="showTab('academic experience')">Academic & Research Experience</div>
-  <div class="tab" onclick="showTab('professional experience')">Professional Experience</div>
-  <div class="tab" onclick="showTab('skills')">Skills</div>
-  <div class="tab" onclick="showTab('certifications')">Certifications</div>
+  <div class="tab active" onclick="showTab('home')">Home</div>
   <div class="tab" onclick="showTab('projects')">Projects</div>
+  <div class="tab" onclick="showTab('resume')">Resume</div>
+  <div class="tab" onclick="showTab('tutorial')">Tutorial</div>
+  <div class="tab" onclick="showTab('about')">About Me</div>
   <div class="tab" onclick="showTab('contact')">Contact</div>
 </div>
 
-<div id="about" class="tab-content active">
-
-<p>
-  Welcome to My Site! I'm <b style="color: #007BFF;">Muhammad Taky Tahmid</b>, a PhD student in Environmental Economics at the University of Delaware. My passion lies in exploring the profound impacts of climate change on society, particularly within the realms of agriculture and national output. I'm also on an exciting journey to integrate machine learning into my climate change research, blending innovation with vital environmental studies.
-</p>
-<p>
-  I absolutely love to code and am proficient in both R and Python. But more than anything, I love to teach and share knowledge. Here, you'll find a showcase of my research, experiences, and tutorials. I'll also be sharing insightful blogs, so stay tuned!
-</p>
-<p>
-  Let's embark on this journey together, learning and growing along the way!
+<div id="home" class="tab-content active">
   <p>
-    Stay Tuned !
+    Welcome to My Site! I'm <b style="color: #007BFF;">Muhammad Taky Tahmid</b>, a PhD student in Environmental Economics at the University of Delaware. My passion lies in exploring the profound impacts of climate change on society, particularly within the realms of agriculture and national output. I'm also on an exciting journey to integrate machine learning into my climate change research, blending innovation with vital environmental studies.
   </p>
-
-
- 
-</p>
-</div>
-
-<div id="education" class="tab-content">
-  <ul>
-    <li> <b style="color: #009BFF;">PhD Student:</b> Environmental Economics, University of Delaware ( 2022 Onward)</li>
-    <li> <b style ="color: #009BFF;">Masters in Environmental Economics:</b> Dhaka School of Economics, University of Dhaka (2017-2019)</li>
-    <li> <b style ="color: #009BFF;">Bachelor of Urban and Regional Planning:</b> Bangladesh University of Engineering and Technology (2010-2015)</li>
-  </ul>
-</div>
-
-<div id="experience" class="tab-content">
-  <ul>
-    <li><strong>Marian R. Okie Fellow</strong> at University of Delaware, School of Marine Science and Policy (August 2022 - Present)</li>
-    <li><strong>Lecturer</strong> at Dhaka School of Economics, University of Dhaka (April 2021 - August 2022)</li>
-    <li><strong>Environmental Economist and Consultant</strong> at APARAJITA Design Development Limited, Dhaka (November 2020 - April 2021)</li>
-    <li><strong>Technical Consultant</strong> at Unimax Consultants Ltd., Dhaka, Bangladesh (February 2021 - March 2021)</li>
-    <li><strong>Assistant Manager (GIS Expert)</strong> at Eastern Housing Limited (October 2019 - March 2021)</li>
-    <li><strong>Urban Planner</strong> at Institute of Water Modelling (December 2018 - June 2019)</li>
-    <li><strong>Junior Urban Planner</strong> at Engineering and Consultants Associates Ltd (July 2015 - May 2016)</li>
-    <li><strong>Intern</strong> at Local Government Engineering Department, Bangladesh (January 2015 - February 2015)</li>
-  </ul>
-</div>
-
-<div id="skills" class="tab-content">
-  <ul>
-    <li>Analytical Skills</li>
-    <li>GIS Tool-based Analysis</li>
-    <li>Data Analysis</li>
-    <li>Water Modeling</li>
-    <li>Hydrologic and Hydrodynamic Analysis</li>
-    <li>Environmental Sector Expertise (Site Clearance, Environmental Clearance)</li>
-  </ul>
-</div>
-
-<div id="certifications" class="tab-content">
-  <ul>
-    <li>Secondary School Certificate</li>
-  </ul>
+  <p>
+    I absolutely love to code and am proficient in both R and Python. But more than anything, I love to teach and share knowledge. Here, you'll find a showcase of my research, experiences, and tutorials. I'll also be sharing insightful blogs, so stay tuned!
+  </p>
+  <p>
+    Let's embark on this journey together, learning and growing along the way!
+  </p>
+  <p>
+    Stay Tuned!
+  </p>
 </div>
 
 <div id="projects" class="tab-content">
   <ul>
     <li><strong>Sonagazi Solar Power LTD. (50 MW AC) Solar Park at Sonagazi, Feni</strong>: Chief Consultant and Urban Planner - Provided consultancy services for site clearance, environmental clearance, and detailed topographic survey.</li>
     <li><strong>Faridpur Sadar Upazila Development Plan</strong>: Project Coordinator - Managed the development plan preparation, introduced smart water and sanitation solutions, and coordinated data collection and analysis.</li>
+  </ul>
+</div>
+
+<div id="resume" class="tab-content">
+  <ul>
+    <li><a href="https://drive.google.com/file/d/1iHfOn-NRr9go1gjN84x5ou_8uhCqfOO3/view?usp=sharing" target="_blank">View My Resume</a></li>
+  </ul>
+</div>
+
+<div id="tutorial" class="tab-content">
+  <ul>
+  </ul>
+</div>
+
+<div id="about" class="tab-content">
+  <ul>
   </ul>
 </div>
 
