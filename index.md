@@ -132,8 +132,8 @@ title: Muhammad Taky Tahmid
 <div id="education" class="tab-content">
   <ul>
     <li> <b style="color: #009BFF;">PhD Student:</b> Environmental Economics, University of Delaware ( 2022 Onward)</li>
-    <li> Masters in Environmental Economics from Dhaka School of Economics, University of Dhaka (2017-2019)</li>
-    <li> Bachelor of Urban and Regional Planning from Bangladesh University of Engineering and Technology (2010-2015)</li>
+    <li> <b style = 'color: #009BFF;">Masters in Environmental Economics:</b> Dhaka School of Economics, University of Dhaka (2017-2019)</li>
+    <li> <b style = 'color: #009BFF;">Bachelor of Urban and Regional Planning:</b> Bangladesh University of Engineering and Technology (2010-2015)</li>
   </ul>
 </div>
 
