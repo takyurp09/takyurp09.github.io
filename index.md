@@ -29,6 +29,7 @@ title: Muhammad Taky Tahmid
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    flex-wrap: wrap;
   }
 
   .tab {
@@ -36,7 +37,7 @@ title: Muhammad Taky Tahmid
     cursor: pointer;
     background: rgba(41, 128, 185, 0.8);
     color: white;
-    margin: 0 10px;
+    margin: 10px 5px;
     border-radius: 10px;
     font-size: 1.2em;
     transition: background 0.3s;
@@ -106,12 +107,13 @@ title: Muhammad Taky Tahmid
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    flex-wrap: wrap;
   }
 
   .profile-picture img {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     margin-right: 20px;
   }
 
@@ -138,6 +140,48 @@ title: Muhammad Taky Tahmid
     background-position: center;
     border-radius: 15px;
     overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .profile-picture img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 1.8em;
+    }
+
+    .tabs {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tab {
+      width: 100%;
+      margin: 5px 0;
+      text-align: center;
+    }
+
+    .tab-content {
+      padding: 20px;
+    }
+
+    .tab-content-background {
+      height: auto;
+      padding: 20px;
+    }
   }
 </style>
 
@@ -198,6 +242,7 @@ title: Muhammad Taky Tahmid
 </div>
 
 <div id="about" class="tab-content tab-content-background" style="background-image: url('https://www.facebook.com/photo/?fbid=736390244596217&set=a.100729874828927');">
+  <p>About Me</p>
 </div>
 
 <div id="contact" class="tab-content tab-content-background" style="background-image: url('https://www.shutterstock.com/image-illustration/website-contact-page-header-concept-260nw-1708985149.jpg');">
