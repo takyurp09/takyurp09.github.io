@@ -184,15 +184,12 @@ title: Muhammad Taky Tahmid
 </div>
 
 <div id="contact" class="tab-content">
-  <p>Feel free to reach out to me through email or LinkedIn for any professional inquiries or collaborations.</p>
-  <p>Email: <a href="mailto:takyurp09@gmail.com">takyurp09@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammad-taky-tahmid-482397100/">Muhammad Taky Tahmid</a></p>
-  <p>Facebook: <a href="https://www.facebook.com/ykat.dimhat" target="_blank">Muhammad Taky Tahmid</a></p>
-  <p>X: <a href="https://www.twitter.com/yourxaccount" target="_blank">Your X Account</a></p>
+  <p>Feel free to reach out to me for any professional inquiries or collaborations.</p>
   <div class="social-icons">
+    <a href="mailto:takyurp09@gmail.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail"></a>
     <a href="https://www.linkedin.com/in/muhammad-taky-tahmid-482397100/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"></a>
     <a href="https://www.facebook.com/ykat.dimhat" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
-    <a href="https://www.twitter.com/yourxaccount" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_X_%28social_network%29.svg" alt="X"></a>
+    <a href="https://twitter.com/TakyTahmid" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_X_%28social_network%29.svg" alt="Twitter"></a>
   </div>
 </div>
 
