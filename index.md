@@ -15,6 +15,7 @@ title: Muhammad Taky Tahmid
     background: url('https://images.unsplash.com/photo-1609692029268-f9ba9b2a728b?fm=jpg&w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFkZHklMjBmaWVsZHxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
+    position: relative;
   }
 
   h1 {
@@ -109,19 +110,34 @@ title: Muhammad Taky Tahmid
 
   .profile-picture img {
     border-radius: 50%;
-    max-width: 150px;
-    height: auto;
+    width: 250px;
+    height: 250px;
     margin-right: 20px;
   }
 
   .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 15px;
   }
 
   .social-icons img {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .home-image {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 150px;
+    border-radius: 10px;
+  }
+
+  .tab-content-background {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
   }
 </style>
 
@@ -154,36 +170,37 @@ title: Muhammad Taky Tahmid
   <p>
     Stay Tuned!
   </p>
+  <img src="https://miro.medium.com/v2/resize:fit:1400/1*TGATqkXS3Y1FVZIC4X-LzA.png" alt="Climate Change Image" class="home-image">
 </div>
 
-<div id="projects" class="tab-content">
+<div id="projects" class="tab-content tab-content-background" style="background-image: url('https://assets.skyfilabs.com/images/blog/free-c-plus-plus-projects-for-beginners.webp');">
   <ul>
     <li><strong>Sonagazi Solar Power LTD. (50 MW AC) Solar Park at Sonagazi, Feni</strong>: Chief Consultant and Urban Planner - Provided consultancy services for site clearance, environmental clearance, and detailed topographic survey.</li>
     <li><strong>Faridpur Sadar Upazila Development Plan</strong>: Project Coordinator - Managed the development plan preparation, introduced smart water and sanitation solutions, and coordinated data collection and analysis.</li>
+    <li>Check out my GitHub page for my completed projects and coding tutorials: <a href="https://github.com/takyurp09" target="_blank">GitHub</a></li>
   </ul>
 </div>
 
-<div id="resume" class="tab-content">
+<div id="resume" class="tab-content tab-content-background" style="background-image: url('https://contenthub-static.grammarly.com/blog/wp-content/uploads/2017/05/5000-August-blog-header-Resume-Words_V1.png');">
   <ul>
     <li><a href="https://drive.google.com/file/d/1iHfOn-NRr9go1gjN84x5ou_8uhCqfOO3/view?usp=sharing" target="_blank">View My Resume</a></li>
   </ul>
 </div>
 
-<div id="tutorial" class="tab-content">
+<div id="tutorial" class="tab-content tab-content-background" style="background-image: url('https://www.dallascollege.edu/resources/online-services/tutorial-videos/PublishingImages/tutorials-1200x630.jpg');">
   <p>
     We are here to help you navigate the intersection of R, Python, STATA, Excel, and economics. Whether you're a student, a professional, or an enthusiast, this page offers you a guide to mastering the tools and concepts that drive modern economics.
   </p>
   <p>
     Check out my YouTube channel: <a href="https://www.youtube.com/@EconCode_with_Taky" target="_blank">EconCode with Taky</a>
+    <a href="https://www.youtube.com/@EconCode_with_Taky" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width:48px; height:48px;"></a>
   </p>
 </div>
 
-<div id="about" class="tab-content">
-  <ul>
-  </ul>
+<div id="about" class="tab-content tab-content-background" style="background-image: url('https://www.facebook.com/photo/?fbid=736390244596217&set=a.100729874828927');">
 </div>
 
-<div id="contact" class="tab-content">
+<div id="contact" class="tab-content tab-content-background" style="background-image: url('https://www.shutterstock.com/image-illustration/website-contact-page-header-concept-260nw-1708985149.jpg');">
   <p>Feel free to reach out to me for any professional inquiries or collaborations.</p>
   <div class="social-icons">
     <a href="mailto:takyurp09@gmail.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail"></a>
