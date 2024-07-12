@@ -201,23 +201,25 @@ title: Muhammad Taky Tahmid
   <div class="tab" onclick="showTab('contact')">Contact</div>
 </div>
 
-<div id="home" class="tab-content active">
-  <p>
-    Welcome to My Site! I'm <b style="color: #007BFF;">Muhammad Taky Tahmid</b>, a PhD student in Environmental Economics at the University of Delaware. My passion lies in exploring the profound impacts of climate change on society, particularly within the realms of agriculture and national output. I'm also on an exciting journey to integrate machine learning into my climate change research, blending innovation with vital environmental studies.
-  </p>
-  <p>
-    I absolutely love to code and am proficient in both R and Python. But more than anything, I love to teach and share knowledge. Here, you'll find a showcase of my research, experiences, and tutorials. I'll also be sharing insightful blogs, so stay tuned!
-  </p>
-  <p>
-    Let's embark on this journey together, learning and growing along the way!
-  </p>
-  <p>
-    Stay Tuned!
-  </p>
-  <img src="https://miro.medium.com/v2/resize:fit:1400/1*TGATqkXS3Y1FVZIC4X-LzA.png" alt="Climate Change Image" class="home-image">
+<div id="home" class="tab-content tab-content-background active" style="background-image: url('https://images.unsplash.com/photo-1609692029268-f9ba9b2a728b?fm=jpg&w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFkZHklMjBmaWVsZHxlbnwwfHwwfHx8MA%3D%3D');">
+  <div>
+    <p>
+      Welcome to My Site! I'm <b style="color: #007BFF;">Muhammad Taky Tahmid</b>, a PhD student in Environmental Economics at the University of Delaware. My passion lies in exploring the profound impacts of climate change on society, particularly within the realms of agriculture and national output. I'm also on an exciting journey to integrate machine learning into my climate change research, blending innovation with vital environmental studies.
+    </p>
+    <p>
+      I absolutely love to code and am proficient in both R and Python. But more than anything, I love to teach and share knowledge. Here, you'll find a showcase of my research, experiences, and tutorials. I'll also be sharing insightful blogs, so stay tuned!
+    </p>
+    <p>
+      Let's embark on this journey together, learning and growing along the way!
+    </p>
+    <p>
+      Stay Tuned!
+    </p>
+    <img src="https://miro.medium.com/v2/resize:fit:1400/1*TGATqkXS3Y1FVZIC4X-LzA.png" alt="Climate Change Image" class="home-image">
+  </div>
 </div>
 
-<div id="projects" class="tab-content tab-content-background" style="background-image: url('https://assets.skyfilabs.com/images/blog/free-c-plus-plus-projects-for-beginners.webp');">
+<div id="projects" class="tab-content">
   <ul>
     <li><strong>Sonagazi Solar Power LTD. (50 MW AC) Solar Park at Sonagazi, Feni</strong>: Chief Consultant and Urban Planner - Provided consultancy services for site clearance, environmental clearance, and detailed topographic survey.</li>
     <li><strong>Faridpur Sadar Upazila Development Plan</strong>: Project Coordinator - Managed the development plan preparation, introduced smart water and sanitation solutions, and coordinated data collection and analysis.</li>
@@ -225,13 +227,13 @@ title: Muhammad Taky Tahmid
   </ul>
 </div>
 
-<div id="resume" class="tab-content tab-content-background" style="background-image: url('https://contenthub-static.grammarly.com/blog/wp-content/uploads/2017/05/5000-August-blog-header-Resume-Words_V1.png');">
+<div id="resume" class="tab-content">
   <ul>
     <li><a href="https://drive.google.com/file/d/1iHfOn-NRr9go1gjN84x5ou_8uhCqfOO3/view?usp=sharing" target="_blank">View My Resume</a></li>
   </ul>
 </div>
 
-<div id="tutorial" class="tab-content tab-content-background" style="background-image: url('https://www.dallascollege.edu/resources/online-services/tutorial-videos/PublishingImages/tutorials-1200x630.jpg');">
+<div id="tutorial" class="tab-content">
   <p>
     We are here to help you navigate the intersection of R, Python, STATA, Excel, and economics. Whether you're a student, a professional, or an enthusiast, this page offers you a guide to mastering the tools and concepts that drive modern economics.
   </p>
@@ -241,10 +243,11 @@ title: Muhammad Taky Tahmid
   </p>
 </div>
 
-<div id="about" class="tab-content tab-content-background" style="background-image: url('https://www.facebook.com/photo/?fbid=736390244596217&set=a.100729874828927');">
+<div id="about" class="tab-content">
+  <p>About Me</p>
 </div>
 
-<div id="contact" class="tab-content tab-content-background" style="background-image: url('https://www.shutterstock.com/image-illustration/website-contact-page-header-concept-260nw-1708985149.jpg');">
+<div id="contact" class="tab-content">
   <p>Feel free to reach out to me for any professional inquiries or collaborations.</p>
   <div class="social-icons">
     <a href="mailto:takyurp09@gmail.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail"></a>
