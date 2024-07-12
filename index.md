@@ -113,6 +113,16 @@ title: Muhammad Taky Tahmid
     height: auto;
     margin-right: 20px;
   }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
 </style>
 
 <div class="header">
@@ -160,8 +170,12 @@ title: Muhammad Taky Tahmid
 </div>
 
 <div id="tutorial" class="tab-content">
-  <ul>
-  </ul>
+  <p>
+    We are here to help you navigate the intersection of R, Python, STATA, Excel, and economics. Whether you're a student, a professional, or an enthusiast, this page offers you a guide to mastering the tools and concepts that drive modern economics.
+  </p>
+  <p>
+    Check out my YouTube channel: <a href="https://www.youtube.com/@EconCode_with_Taky" target="_blank">EconCode with Taky</a>
+  </p>
 </div>
 
 <div id="about" class="tab-content">
@@ -173,6 +187,13 @@ title: Muhammad Taky Tahmid
   <p>Feel free to reach out to me through email or LinkedIn for any professional inquiries or collaborations.</p>
   <p>Email: <a href="mailto:takyurp09@gmail.com">takyurp09@gmail.com</a></p>
   <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammad-taky-tahmid-482397100/">Muhammad Taky Tahmid</a></p>
+  <p>Facebook: <a href="https://www.facebook.com/ykat.dimhat" target="_blank">Muhammad Taky Tahmid</a></p>
+  <p>X: <a href="https://www.twitter.com/yourxaccount" target="_blank">Your X Account</a></p>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/muhammad-taky-tahmid-482397100/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"></a>
+    <a href="https://www.facebook.com/ykat.dimhat" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+    <a href="https://www.twitter.com/yourxaccount" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_X_%28social_network%29.svg" alt="X"></a>
+  </div>
 </div>
 
 <script>
