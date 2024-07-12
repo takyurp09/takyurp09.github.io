@@ -41,6 +41,7 @@ title: Muhammad Taky Tahmid
     border-radius: 10px;
     font-size: 1.2em;
     transition: background 0.3s;
+    text-align: center;
   }
 
   .tab:hover {
@@ -171,7 +172,6 @@ title: Muhammad Taky Tahmid
     .tab {
       width: 100%;
       margin: 5px 0;
-      text-align: center;
     }
 
     .tab-content {
@@ -242,7 +242,6 @@ title: Muhammad Taky Tahmid
 </div>
 
 <div id="about" class="tab-content tab-content-background" style="background-image: url('https://www.facebook.com/photo/?fbid=736390244596217&set=a.100729874828927');">
-  <p>About Me</p>
 </div>
 
 <div id="contact" class="tab-content tab-content-background" style="background-image: url('https://www.shutterstock.com/image-illustration/website-contact-page-header-concept-260nw-1708985149.jpg');">
