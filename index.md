@@ -136,17 +136,6 @@ title: Muhammad Taky Tahmid
     border-radius: 10px;
   }
 
-  .tab-content-background {
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    overflow: hidden;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   @media screen and (max-width: 768px) {
     .header {
       flex-direction: column;
@@ -177,11 +166,6 @@ title: Muhammad Taky Tahmid
     .tab-content {
       padding: 20px;
     }
-
-    .tab-content-background {
-      height: auto;
-      padding: 20px;
-    }
   }
 </style>
 
@@ -201,7 +185,7 @@ title: Muhammad Taky Tahmid
   <div class="tab" onclick="showTab('contact')">Contact</div>
 </div>
 
-<div id="home" class="tab-content tab-content-background active" style="background-image: url('https://images.unsplash.com/photo-1609692029268-f9ba9b2a728b?fm=jpg&w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFkZHklMjBmaWVsZHxlbnwwfHwwfHx8MA%3D%3D');">
+<div id="home" class="tab-content active">
   <div>
     <p>
       Welcome to My Site! I'm <b style="color: #007BFF;">Muhammad Taky Tahmid</b>, a PhD student in Environmental Economics at the University of Delaware. My passion lies in exploring the profound impacts of climate change on society, particularly within the realms of agriculture and national output. I'm also on an exciting journey to integrate machine learning into my climate change research, blending innovation with vital environmental studies.
