@@ -205,9 +205,7 @@ title: Muhammad Taky Tahmid
 
 <div id="projects" class="tab-content">
   <ul>
-    <li><strong>Sonagazi Solar Power LTD. (50 MW AC) Solar Park at Sonagazi, Feni</strong>: Chief Consultant and Urban Planner - Provided consultancy services for site clearance, environmental clearance, and detailed topographic survey.</li>
-    <li><strong>Faridpur Sadar Upazila Development Plan</strong>: Project Coordinator - Managed the development plan preparation, introduced smart water and sanitation solutions, and coordinated data collection and analysis.</li>
-    <li>Check out my GitHub page for my completed projects and coding tutorials: <a href="https://github.com/takyurp09" target="_blank">GitHub</a></li>
+    <li>Check out my GitHub page for my completed projects: <a href="https://github.com/takyurp09" target="_blank">GitHub</a></li>
   </ul>
 </div>
 
