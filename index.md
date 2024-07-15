@@ -213,7 +213,7 @@ title: Muhammad Taky Tahmid
 
 <div id="resume" class="tab-content">
   <ul>
-    <li><a href="https://drive.google.com/file/d/1iHfOn-NRr9go1gjN84x5ou_8uhCqfOO3/view?usp=sharing" target="_blank">View My Resume</a></li>
+    <li><a href="https://drive.google.com/file/d/1iHfOn-NRr9go1gjN84x5ou_8uhCqfOO3/view?usp=sharing" target="_blank">Take a look at my professional journey and explore my resume here.</a></li>
   </ul>
 </div>
 
@@ -237,7 +237,7 @@ title: Muhammad Taky Tahmid
     <a href="mailto:takyurp09@gmail.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail"></a>
     <a href="https://www.linkedin.com/in/muhammad-taky-tahmid-482397100/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"></a>
     <a href="https://www.facebook.com/ykat.dimhat" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
-    <a href="https://twitter.com/TakyTahmid" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_X_%28social_network%29.svg" alt="Twitter"></a>
+    <a href="https://twitter.com/TakyTahmid" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter"></a>
   </div>
 </div>
 
