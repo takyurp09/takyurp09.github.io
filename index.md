@@ -180,7 +180,7 @@ layout: default
   <div class="tab" onclick="showTab('projects')">Projects</div>
   <div class="tab" onclick="showTab('resume')">Resume</div>
   <div class="tab" onclick="showTab('tutorial')">Tutorial</div>
-  <div class="tab" onclick="showTab('about')">Research</div>
+  <div class="tab" onclick="showTab('research')">Research</div>
   <div class="tab" onclick="showTab('contact')">Contact</div>
 </div>
 
@@ -229,17 +229,17 @@ layout: default
 
   <ul>
     <li>
-      <strong>Reductions in Economic Outcomes Due to Climate Change Today:</strong> In this research, we provide a first meta-analysis of divergent results, applying a machine learning approach to develop a “best estimate” from 58 statistical models across 8 key papers. We then combine this with other major dynamics by which climate change impacts and undermines economic outcomes, including the persistence of damages, sea-level rise, trade spill-overs, and capital loss ( Manuscript under Review). 
+      <strong>Reductions in Economic Outcomes Due to Climate Change Today:</strong> In this research, we provide a first meta-analysis of divergent results, applying a machine learning approach to develop a “best estimate” from 58 statistical models across 8 key papers. We then combine this with other major dynamics by which climate change impacts and undermines economic outcomes, including the persistence of damages, sea-level rise, trade spill-overs, and capital loss (Manuscript under Review). 
     </li>
     <li>
-      <strong>Data Gap Analysis for Delaware Bay and Ocean Spatial Plan:</strong> This project began by identifying all activities related to Delaware Bay and ocean use through literature reviews, stakeholder meetings, and key interviews, which were then consolidated into six broad categories. In the second phase, we conducted a data gap analysis, assessing over 130 datasets to evaluate their spatial and temporal coverage concerning these activities. The analysis aimed to categorize the activities based on their relevance to sub-groups and identify areas where data is lacking, providing critical insights for future data collection in support of Delaware Bay and Ocean Spatial Planning( Manuscript under preparation).
+      <strong>Data Gap Analysis for Delaware Bay and Ocean Spatial Plan:</strong> This project began by identifying all activities related to Delaware Bay and ocean use through literature reviews, stakeholder meetings, and key interviews, which were then consolidated into six broad categories. In the second phase, we conducted a data gap analysis, assessing over 130 datasets to evaluate their spatial and temporal coverage concerning these activities. The analysis aimed to categorize the activities based on their relevance to sub-groups and identify areas where data is lacking. It provided critical insights for future data collection in support of Delaware Bay and Ocean Spatial Planning (Manuscript under preparation).
     </li>
   </ul>
 </div>
 
 
 <div id="contact" class="tab-content">
-  <p>Feel free to reach out to me for any professional inquiries or collaborations.</p>
+  <p>Feel free to contact me for professional inquiries or collaborations.</p>
   <div class="social-icons">
     <a href="mailto:takyurp09@gmail.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail"></a>
     <a href="https://www.linkedin.com/in/muhammad-taky-tahmid-482397100/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"></a>
