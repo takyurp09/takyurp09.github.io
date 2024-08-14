@@ -237,8 +237,6 @@ layout: default
   </ul>
 </div>
 
-  
-</div>
 
 <div id="contact" class="tab-content">
   <p>Feel free to reach out to me for any professional inquiries or collaborations.</p>
