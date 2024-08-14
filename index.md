@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Muhammad Taky Tahmid
 ---
 
 <style>
