@@ -1,19 +1,14 @@
 title: Muhammad Taky Tahmid
-description: My personal portfolio and blog site.
-baseurl: "" # the subpath of your site, e.g., /blog
-url: "http://yourusername.github.io/my-jekyll-site" # replace with your GitHub Pages URL
-theme: minima
+description: Environmental Economist, PhD Researcher at University of Delaware. Climate change, agriculture, data science, and consulting.
+url: "https://takyurp09.github.io"
+baseurl: ""
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
+# Disable Jekyll theme — using custom HTML/CSS
+theme: ~
 
-# Minima theme settings
-minima:
-  skin: classic
-  header: true
-  social_links: true
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+exclude:
+  - "*.md"
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

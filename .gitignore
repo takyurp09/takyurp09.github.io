@@ -1,0 +1,6 @@
+.DS_Store
+*.synctex.gz
+*.log
+Screenshot*
+2024_07_11_*/
+website/
