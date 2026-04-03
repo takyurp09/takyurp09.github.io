@@ -1028,3 +1028,168 @@ footer strong { color: var(--white); }
   .modal-facts { grid-template-columns: repeat(2, 1fr); }
   .modal-title { font-size: 1.15rem; }
 }
+
+/* ============================================================
+   TYPING ANIMATION
+   ============================================================ */
+.typing-cursor {
+  display: inline-block;
+  color: var(--gold);
+  font-weight: 300;
+  animation: blink 0.75s step-end infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ============================================================
+   COUNTERS SECTION
+   ============================================================ */
+#counters {
+  background: linear-gradient(135deg, var(--navy) 0%, #1e6b6b 100%);
+  padding: 64px 0;
+}
+
+.counters-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.counter-item {
+  text-align: center;
+  padding: 28px 44px;
+  position: relative;
+  color: var(--white);
+}
+
+.counter-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background: rgba(255,255,255,0.18);
+}
+
+.counter-num {
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 8px;
+  font-variant-numeric: tabular-nums;
+}
+
+.counter-label {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.72);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .counter-item { padding: 20px 24px; }
+  .counter-item::after { display: none; }
+  .counter-num { font-size: 2.2rem; }
+}
+
+/* ============================================================
+   WORLD MAP SECTION
+   ============================================================ */
+#worldmap { background: var(--light); }
+
+#map-container {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+#research-map {
+  height: 460px;
+  width: 100%;
+  z-index: 1;
+}
+
+.map-legend {
+  background: var(--white);
+  padding: 14px 20px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.83rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   CONSULTING FLOATING PILL
+   ============================================================ */
+#consult-pill {
+  position: fixed;
+  bottom: 82px;
+  right: 28px;
+  z-index: 998;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: var(--white);
+  color: var(--teal);
+  border: 2px solid var(--teal);
+  padding: 9px 18px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  box-shadow: 0 6px 24px rgba(30,138,138,0.22);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+
+#consult-pill:hover {
+  background: var(--teal);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.pill-dot {
+  width: 8px;
+  height: 8px;
+  background: #2ecc71;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 0 rgba(46,204,113,0.5);
+  animation: pulse-dot 1.8s infinite;
+}
+
+@keyframes pulse-dot {
+  0%   { box-shadow: 0 0 0 0 rgba(46,204,113,0.6); }
+  70%  { box-shadow: 0 0 0 8px rgba(46,204,113,0); }
+  100% { box-shadow: 0 0 0 0 rgba(46,204,113,0); }
+}
+
+@media (max-width: 640px) {
+  #consult-pill { bottom: 76px; right: 16px; font-size: 0.76rem; padding: 8px 14px; }
+}

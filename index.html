@@ -67,7 +67,9 @@
       <div class="hero-text">
         <span class="hero-tag">&#127758; Environmental Economist</span>
         <h1>Muhammad <span>Taky</span> Tahmid</h1>
-        <h2>PhD Researcher &amp; Climate Data Scientist</h2>
+        <h2>
+          <span id="typing-text"></span><span class="typing-cursor">|</span>
+        </h2>
         <a href="https://www.udel.edu" target="_blank" class="ud-badge">
           <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
           University of Delaware · PhD Candidate
@@ -177,6 +179,57 @@
           <div class="skill-label"><span>Data Visualization</span><span>90%</span></div>
           <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     COUNTERS
+     ====================================================== -->
+<section id="counters">
+  <div class="container">
+    <div class="counters-grid">
+      <div class="counter-item">
+        <span class="counter-num" data-target="6">0</span>
+        <span class="counter-label">Research Projects</span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="33">0</span>
+        <span class="counter-label">Countries Studied</span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="58">0</span>
+        <span class="counter-label">Models Analyzed</span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="1164">0</span>
+        <span class="counter-label">Country-Year Observations</span>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="130">0</span>
+        <span class="counter-label">Datasets Evaluated</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     WORLD MAP
+     ====================================================== -->
+<section id="worldmap">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Global Reach</span>
+      <h2>Research Coverage</h2>
+      <p>33 countries across Sub-Saharan Africa, South Asia, Southeast Asia, Latin America, and beyond — studying climate impacts on food security and agriculture.</p>
+      <div class="divider"></div>
+    </div>
+    <div id="map-container">
+      <div id="research-map"></div>
+      <div class="map-legend">
+        <div class="legend-item"><span class="legend-dot" style="background:#1e8a8a"></span> Food Security Study Countries</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#C9922A"></span> University of Delaware (Base)</div>
       </div>
     </div>
   </div>
@@ -643,6 +696,15 @@
 <!-- Back to top -->
 <button id="back-top" aria-label="Back to top">↑</button>
 
+<!-- Consulting floating pill -->
+<a href="#contact" id="consult-pill">
+  <span class="pill-dot"></span>
+  Available for Consulting
+</a>
+
+<!-- Leaflet (world map) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <!-- JS -->
