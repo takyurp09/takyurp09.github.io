@@ -4,7 +4,141 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ---- NAVBAR active link on scroll ---- */
+  /* ============================================================
+     TYPING ANIMATION
+     ============================================================ */
+  const phrases = [
+    'PhD Researcher · Climate Economics',
+    'Climate Data Scientist',
+    'Applied Econometrician',
+    'Data Science Consultant',
+    'Environmental Economist'
+  ];
+  const typingEl = document.getElementById('typing-text');
+  if (typingEl) {
+    let pi = 0, ci = 0, deleting = false;
+    const typeSpeed = 60, deleteSpeed = 35, pauseMs = 2000;
+
+    function typeLoop() {
+      const phrase = phrases[pi];
+      if (!deleting) {
+        typingEl.textContent = phrase.slice(0, ++ci);
+        if (ci === phrase.length) { deleting = true; setTimeout(typeLoop, pauseMs); return; }
+      } else {
+        typingEl.textContent = phrase.slice(0, --ci);
+        if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
+      }
+      setTimeout(typeLoop, deleting ? deleteSpeed : typeSpeed);
+    }
+    typeLoop();
+  }
+
+  /* ============================================================
+     ANIMATED COUNTERS
+     ============================================================ */
+  const counterEls = document.querySelectorAll('.counter-num');
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseInt(el.dataset.target, 10);
+      const duration = 1800;
+      const step = Math.ceil(target / (duration / 16));
+      let current = 0;
+      const timer = setInterval(() => {
+        current = Math.min(current + step, target);
+        el.textContent = current.toLocaleString();
+        if (current >= target) clearInterval(timer);
+      }, 16);
+      counterObserver.unobserve(el);
+    });
+  }, { threshold: 0.4 });
+  counterEls.forEach(el => counterObserver.observe(el));
+
+  /* ============================================================
+     WORLD MAP (Leaflet) — 33 food security study countries
+     ============================================================ */
+  const mapEl = document.getElementById('research-map');
+  if (mapEl && typeof L !== 'undefined') {
+    const map = L.map('research-map', {
+      center: [15, 20],
+      zoom: 2,
+      scrollWheelZoom: false,
+      attributionControl: true
+    });
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
+      maxZoom: 6
+    }).addTo(map);
+
+    // 33 countries from the food security study
+    const studyCountries = [
+      { name: 'Ethiopia',        lat:  9.1,   lng: 40.5  },
+      { name: 'Kenya',           lat: -0.0,   lng: 37.9  },
+      { name: 'Nigeria',         lat:  9.1,   lng:  8.7  },
+      { name: 'Ghana',           lat:  7.9,   lng:  -1.0 },
+      { name: 'Tanzania',        lat: -6.4,   lng: 34.9  },
+      { name: 'Uganda',          lat:  1.4,   lng: 32.3  },
+      { name: 'Mozambique',      lat: -18.7,  lng: 35.5  },
+      { name: 'Madagascar',      lat: -18.8,  lng: 46.9  },
+      { name: 'Mali',            lat: 17.6,   lng:  -4.0 },
+      { name: 'Malawi',          lat: -13.3,  lng: 34.3  },
+      { name: 'Bangladesh',      lat: 23.7,   lng: 90.4  },
+      { name: 'India',           lat: 20.6,   lng: 79.0  },
+      { name: 'Nepal',           lat: 28.4,   lng: 84.1  },
+      { name: 'Pakistan',        lat: 30.4,   lng: 69.3  },
+      { name: 'Cambodia',        lat: 12.6,   lng: 104.9 },
+      { name: 'Indonesia',       lat: -0.8,   lng: 113.9 },
+      { name: 'Philippines',     lat: 12.9,   lng: 121.8 },
+      { name: 'Vietnam',         lat: 14.1,   lng: 108.3 },
+      { name: 'Bolivia',         lat: -16.3,  lng: -63.6 },
+      { name: 'Guatemala',       lat: 15.8,   lng: -90.2 },
+      { name: 'Haiti',           lat: 18.9,   lng: -72.3 },
+      { name: 'Honduras',        lat: 15.2,   lng: -86.2 },
+      { name: 'Nicaragua',       lat: 12.9,   lng: -85.2 },
+      { name: 'Peru',            lat: -9.2,   lng: -75.0 },
+      { name: 'Colombia',        lat:  4.6,   lng: -74.3 },
+      { name: 'Ecuador',         lat: -1.8,   lng: -78.2 },
+      { name: 'Egypt',           lat: 26.8,   lng: 30.8  },
+      { name: 'Morocco',         lat: 31.8,   lng:  -7.1 },
+      { name: 'Sudan',           lat: 15.6,   lng: 32.5  },
+      { name: 'Yemen',           lat: 15.6,   lng: 48.5  },
+      { name: 'Myanmar',         lat: 17.1,   lng: 96.9  },
+      { name: 'Laos',            lat: 19.9,   lng: 102.5 },
+      { name: 'Zambia',          lat: -13.1,  lng: 27.8  }
+    ];
+
+    const tealIcon = L.circleMarker;
+    studyCountries.forEach(c => {
+      L.circleMarker([c.lat, c.lng], {
+        radius: 7,
+        fillColor: '#1e8a8a',
+        color: '#fff',
+        weight: 2,
+        opacity: 1,
+        fillOpacity: 0.88
+      }).addTo(map).bindPopup(
+        `<strong>${c.name}</strong><br><span style="color:#666;font-size:12px">Food Security Study</span>`
+      );
+    });
+
+    // University of Delaware marker
+    L.circleMarker([39.68, -75.75], {
+      radius: 9,
+      fillColor: '#C9922A',
+      color: '#fff',
+      weight: 2.5,
+      opacity: 1,
+      fillOpacity: 1
+    }).addTo(map).bindPopup(
+      '<strong>University of Delaware</strong><br><span style="color:#666;font-size:12px">Newark, DE \u2014 Research Base</span>'
+    );
+  }
+
+  /* ============================================================
+     NAVBAR active link on scroll
+     ============================================================ */
   const sections  = document.querySelectorAll('section[id]');
   const navLinks  = document.querySelectorAll('.nav-links a');
   const navbar    = document.getElementById('navbar');
