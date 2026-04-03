@@ -183,7 +183,29 @@ section:nth-child(even) { background: var(--light); }
   font-size: 1.1rem;
   font-weight: 400;
   color: rgba(255,255,255,0.78);
-  margin-bottom: 22px;
+  margin-bottom: 10px;
+}
+
+/* UD Affiliation Badge */
+.ud-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(0, 33, 71, 0.55);
+  border: 1px solid rgba(255, 198, 0, 0.55);
+  color: #ffc600;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+  transition: background 0.2s;
+}
+
+.ud-badge:hover {
+  background: rgba(0, 33, 71, 0.8);
+  color: #ffc600;
 }
 
 .hero-text p {
