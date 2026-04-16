@@ -597,69 +597,55 @@ section:nth-child(even) { background: var(--light); }
 }
 
 /* ---------- CV ---------- */
-.cv-wrapper {
-  max-width: 780px;
+.cv-download-wrapper {
+  max-width: 600px;
   margin: 0 auto;
+}
+
+.cv-download-card {
   background: var(--white);
+  padding: 50px 40px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
-  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cv-header {
-  background: linear-gradient(135deg, var(--navy), #2a4a6e);
-  padding: 36px 40px;
-  color: var(--white);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+.cv-download-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-.cv-header h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 4px; }
-.cv-header p  { font-size: 0.9rem; opacity: 0.8; }
-
-.cv-body { padding: 36px 40px; }
-
-.cv-section { margin-bottom: 30px; }
-
-.cv-section h4 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 1.8px;
+.download-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--teal-lt);
   color: var(--teal);
-  font-weight: 700;
-  margin-bottom: 16px;
-  padding-bottom: 8px;
-  border-bottom: 2px solid var(--teal-lt);
-}
-
-.cv-item {
+  border-radius: 50%;
   display: flex;
-  gap: 16px;
-  margin-bottom: 14px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
 }
 
-.cv-year {
-  font-size: 0.8rem;
-  color: var(--muted);
-  font-weight: 600;
-  min-width: 60px;
-  padding-top: 2px;
-}
-
-.cv-detail strong {
-  display: block;
-  font-size: 0.95rem;
+.cv-download-card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
   color: var(--navy);
-  font-weight: 700;
+  margin-bottom: 12px;
 }
 
-.cv-detail span {
-  font-size: 0.85rem;
+.cv-download-card p {
   color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+.btn-lg {
+  padding: 14px 36px;
+  font-size: 1rem;
 }
 
 /* ---------- CONTACT ---------- */
