@@ -119,41 +119,62 @@ p{margin:0 0 15px;font-family:var(--font)}
 .home-columns .edu-list p:last-child{margin-bottom:0}
 .link-list{list-style:none;padding-left:0!important}
 
-section+section{margin-top:36px}
+section+section{margin-top:28px}
 .publication{padding:0 0 16px;margin-bottom:16px;border-bottom:1px solid #e3e5e7}
 .publication:last-child{margin-bottom:0;border-bottom:0;padding-bottom:0}
 .publication p:last-child{margin-bottom:0}
 .pub-list{list-style:none;padding:0;margin:0}
 .pub-list li{
-  padding:0 0 11px;
-  margin:0 0 11px;
-  border-bottom:1px solid #e3e5e7;
+  padding:0 0 8px;
+  margin:0 0 8px;
+  border-bottom:1px solid #e8eaec;
   font-size:.95rem;
-  line-height:1.5;
+  line-height:1.4;
 }
 .pub-list li:last-child{margin-bottom:0;padding-bottom:0;border-bottom:0}
-.pub-list strong{font-weight:650;font-size:.98rem}
-.pub-list .venue{color:var(--muted);font-size:.86rem}
-details{font-size:.93rem;margin-top:8px}
-summary{cursor:pointer;color:var(--link);font-size:.88rem;width:max-content;max-width:100%}
-details p{margin:10px 0 0;color:#4c5358}
+.pub-list strong{display:block;font-weight:650;font-size:.97rem;margin-bottom:2px}
+.pub-list .pub-meta,
+.pub-list .venue{display:block;color:var(--muted);font-size:.86rem;line-height:1.4}
 .resource-list{padding:0;list-style:none;margin:0}
 .resource-list li{padding:11px 0;border-bottom:1px solid var(--rule)}
 .resource-list li:last-child{border-bottom:0}
+.resource-list.compact{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px 18px;
+}
+.resource-list.compact li{padding:0;border:0;font-size:.95rem}
 .note{padding:12px 15px;background:var(--soft);border-left:3px solid #8b969e;font-size:.91rem;color:#4b5359}
 
 .entry{
   display:grid;
   grid-template-columns:145px 1fr;
-  gap:18px;
-  padding:0 0 16px;
-  margin-bottom:16px;
+  gap:14px;
+  padding:0 0 12px;
+  margin-bottom:12px;
   border-bottom:1px solid var(--rule);
 }
-.entry:last-child{margin-bottom:0}
+.entry:last-child{margin-bottom:0;border-bottom:0;padding-bottom:0}
 .entry .date{font-size:.83rem;color:var(--muted);padding-top:2px}
 .entry p{margin:0 0 4px}
 .entry h3{font-size:1rem}
+
+.exp-list{list-style:none;padding:0;margin:0}
+.exp-list li{
+  padding:0 0 8px;
+  margin:0 0 8px;
+  border-bottom:1px solid #e8eaec;
+  font-size:.95rem;
+  line-height:1.45;
+}
+.exp-list li:last-child{margin-bottom:0;padding-bottom:0;border-bottom:0}
+.exp-list .date{
+  display:inline-block;
+  min-width:9.5rem;
+  color:var(--muted);
+  font-size:.86rem;
+  margin-right:6px;
+}
 
 footer{border-top:1px solid var(--rule);padding:24px 0 35px;color:var(--muted);font-size:.82rem}
 footer p{margin:0}
