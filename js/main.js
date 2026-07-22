@@ -1,36 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const button = document.querySelector('.menu-button');
-  const menu = document.getElementById('menu');
-  const links = [...document.querySelectorAll('.nav-list a[href^="#"]')];
-  const sections = [...document.querySelectorAll('main section[id]')];
-
-  const closeMenu = () => {
-    menu.classList.remove('open');
-    button.setAttribute('aria-expanded', 'false');
-  };
-
-  button.addEventListener('click', () => {
-    const open = menu.classList.toggle('open');
-    button.setAttribute('aria-expanded', String(open));
-  });
-
-  links.forEach(link => link.addEventListener('click', closeMenu));
-  document.addEventListener('keydown', event => {
-    if (event.key === 'Escape') {
-      closeMenu();
-      button.focus();
-    }
-  });
-
-  const activateLink = () => {
-    let current = 'home';
-    sections.forEach(section => {
-      if (window.scrollY >= section.offsetTop - 110) current = section.id;
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-links');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
     });
-    links.forEach(link => link.classList.toggle('active', link.hash === '#' + current));
-  };
-
-  window.addEventListener('scroll', activateLink, { passive: true });
-  activateLink();
-  document.getElementById('year').textContent = new Date().getFullYear();
+    menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+  }
+  document.querySelectorAll('details').forEach(detail => {
+    const summary = detail.querySelector('summary');
+    if (!summary) return;
+    const closed = summary.textContent.replace(/^Hide /, 'Show ');
+    const open = closed.replace(/^Show /, 'Hide ');
+    const label = () => { summary.textContent = detail.open ? open : closed; };
+    detail.addEventListener('toggle', label);
+    label();
+  });
+  const year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
 });
