@@ -361,3 +361,126 @@ footer p{margin:0}
   .home-actions{justify-content:space-between;gap:16px}
   .action-link{gap:9px;font-size:.9rem}
 }
+
+/* Homepage v2: direct, reference-led academic composition. */
+.home-page{
+  display:flex;
+  min-height:100vh;
+  flex-direction:column;
+  background:#fff;
+  color:#202326;
+}
+.home-page .site-header{flex:0 0 auto;background:#fff;border-color:#e1e1e1}
+.home-page .nav{min-height:66px;justify-content:center}
+.home-page .nav ul{gap:27px}
+.home-page .nav li a{
+  padding:20px 0 18px;
+  color:#25282a;
+  font-size:1.02rem;
+  font-weight:400;
+  border-bottom:2px solid transparent;
+}
+.home-page .nav li a:hover,
+.home-page .nav li a[aria-current=page]{color:#176b91;border-bottom-color:transparent}
+.home-page .home-main{
+  width:min(1060px,calc(100% - 40px));
+  max-width:none;
+  flex:1 0 auto;
+  padding:54px 0 62px;
+}
+.home-page .home-intro{margin:0 0 24px;padding:0;border:0}
+.home-page .home-intro h1{
+  margin:0 0 7px;
+  padding:0;
+  border:0;
+  color:#101214;
+  font-size:3.15rem;
+  line-height:1.08;
+  font-weight:700;
+  letter-spacing:-.025em;
+}
+.home-page .home-intro p{margin:0;color:#33383b;font-size:1.18rem;line-height:1.45}
+.home-page .home-intro a{color:#176b91}
+.home-page .home-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 310px;
+  gap:52px;
+  align-items:start;
+}
+.home-page .home-about{max-width:68ch;padding-top:4px}
+.home-page .home-about p{margin:0 0 19px;color:#272b2e;font-size:1.19rem;line-height:1.57}
+.home-page .home-about p:last-child{margin-bottom:0}
+.home-page .home-profile{display:block}
+.home-page .home-portrait{width:100%;margin:0;border:0;background:#f3f3f3;box-shadow:0 2px 9px rgba(0,0,0,.14)}
+.home-page .home-portrait img{display:block;width:100%;height:350px;aspect-ratio:auto;object-fit:cover;object-position:center 44%}
+.home-page .contact-card{padding:14px 0 0}
+.home-page .contact-card p{margin:0;color:#202326;font-size:.98rem;line-height:1.48}
+.home-page .contact-card strong{color:#176b91;font-size:1.04rem;font-weight:600}
+.home-page .contact-card a{color:#202326}
+.home-page .social-links{display:flex;gap:14px;margin:9px 0 0;padding:0;border:0;list-style:none}
+.home-page .social-links a{color:#176b91;font-size:.88rem;text-decoration:none}
+.home-page .social-links a:hover{text-decoration:underline}
+.home-page .home-contact{margin:34px auto 0;text-align:center}
+.home-page .home-actions{display:flex;justify-content:center;align-items:center;gap:30px;margin:0}
+.home-page .home-actions a{color:#050505;text-decoration:none}
+.home-page .cv-action{font-size:3.15rem;line-height:1;font-weight:700;letter-spacing:-.07em}
+.home-page .email-action{display:flex;align-items:center;justify-content:center;width:64px;height:48px}
+.home-page .mail-icon{position:relative;display:block;width:58px;height:42px;border:5px solid currentColor;border-radius:4px}
+.home-page .mail-icon:after{content:"";position:absolute;left:9px;right:9px;top:0;height:25px;border-left:5px solid currentColor;border-bottom:5px solid currentColor;transform:rotate(-45deg)}
+.home-page .home-contact p{margin:13px 0 0;color:#464a4c;font-size:.98rem}
+.home-page footer{
+  width:100%;
+  margin:0;
+  padding:18px 20px;
+  border:0;
+  background:#202122;
+  color:#d7d7d7;
+  text-align:center;
+  font-size:.86rem;
+}
+
+@media(max-width:800px){
+  .home-page .home-main{padding-top:44px}
+  .home-page .home-intro h1{font-size:2.8rem}
+  .home-page .home-grid{grid-template-columns:minmax(0,1fr) 250px;gap:32px}
+  .home-page .home-about p{font-size:1.08rem;line-height:1.55}
+  .home-page .home-portrait img{height:310px}
+}
+@media(max-width:680px){
+  .home-page .nav{min-height:60px;justify-content:space-between}
+  .home-page .site-name{display:block;color:#202326;font-size:.85rem;letter-spacing:.12em}
+  .home-page .nav-toggle{display:block;margin-right:-8px;padding:8px;border:0;background:#fff;color:#202326;font:600 .9rem var(--font)}
+  .home-page .nav ul{display:none;order:3;width:100%;gap:0;padding:8px 0 10px;border-top:1px solid #e1e1e1}
+  .home-page .nav ul.open{display:flex}
+  .home-page .nav li a{padding:6px 5px 4px;font-size:.86rem}
+  .home-page .home-main{width:calc(100% - 32px);padding:36px 0 48px}
+  .home-page .home-intro{margin-bottom:27px}
+  .home-page .home-intro h1{font-size:clamp(2.22rem,11vw,2.65rem);line-height:1.04;overflow-wrap:break-word}
+  .home-page .home-intro p{font-size:1.04rem;line-height:1.45}
+  .home-page .home-grid{display:flex;flex-direction:column;gap:30px}
+  .home-page .home-about{max-width:none;padding:0}
+  .home-page .home-about p{font-size:1.04rem;line-height:1.58;overflow-wrap:break-word}
+  .home-page .home-profile{width:100%;display:grid;grid-template-columns:190px 1fr;gap:19px;align-items:start}
+  .home-page .home-portrait{width:190px}
+  .home-page .home-portrait img{height:235px}
+  .home-page .contact-card{padding:3px 0 0}
+  .home-page .contact-card p{font-size:.91rem;overflow-wrap:anywhere}
+  .home-page .social-links{display:block;margin-top:10px}
+  .home-page .social-links li{margin:4px 0}
+  .home-page .home-contact{margin-top:36px}
+  .home-page .cv-action{font-size:2.8rem}
+  .home-page .email-action{width:58px;height:44px}
+  .home-page .mail-icon{width:52px;height:38px;border-width:4px}
+  .home-page .mail-icon:after{border-width:0 0 4px 4px}
+}
+@media(max-width:420px){
+  .home-page .home-profile{grid-template-columns:145px 1fr;gap:16px}
+  .home-page .home-portrait{width:145px}
+  .home-page .home-portrait img{height:190px}
+}
+@media(max-width:350px){
+  .home-page .home-profile{display:block}
+  .home-page .home-portrait{width:180px;margin-inline:auto}
+  .home-page .contact-card{text-align:center;padding-top:13px}
+  .home-page .social-links{display:flex;justify-content:center}
+}
