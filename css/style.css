@@ -6,7 +6,7 @@
   --rule:#d9dde1;
   --soft:#f7f8f9;
   --max:1140px;
-  --font:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --font:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
 }
 *{box-sizing:border-box;font-family:var(--font)}
 html{scroll-behavior:smooth}
@@ -483,4 +483,71 @@ footer p{margin:0}
   .home-page .home-portrait{width:180px;margin-inline:auto}
   .home-page .contact-card{text-align:center;padding-top:13px}
   .home-page .social-links{display:flex;justify-content:center}
+}
+
+/* Homepage v3 polish: editorial typography, deliberate crop, quiet actions. */
+.home-page .nav li a{font-weight:400;letter-spacing:-.005em}
+.home-page .home-intro h1{
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:3.05rem;
+  font-weight:600;
+  letter-spacing:-.028em;
+}
+.home-page .home-intro p{font-size:1.12rem;letter-spacing:-.008em}
+.home-page .home-about p{
+  font-size:1.125rem;
+  line-height:1.62;
+  letter-spacing:-.006em;
+}
+.home-page .home-portrait{
+  aspect-ratio:4/5;
+  overflow:hidden;
+  box-shadow:0 2px 7px rgba(20,28,32,.1);
+}
+.home-page .home-portrait img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:58% 42%;
+  transform:scale(1.18) translate(-3.5%,-8%);
+  transform-origin:58% 42%;
+}
+.home-page .home-contact{margin-top:43px}
+.home-page .home-actions{gap:42px}
+.home-page .home-actions a,
+.home-page .cv-action,
+.home-page .email-action{
+  display:inline-flex;
+  width:auto;
+  height:auto;
+  min-height:44px;
+  align-items:center;
+  gap:8px;
+  padding:9px 2px 8px;
+  border-bottom:1px solid #aeb5b8;
+  color:#16252d;
+  font-family:var(--font);
+  font-size:1rem;
+  line-height:1.2;
+  font-weight:500;
+  letter-spacing:.005em;
+  text-decoration:none;
+}
+.home-page .home-actions a span{color:#176b91;font-size:.94em;transition:transform .18s ease}
+.home-page .home-actions a:hover{color:#176b91;border-bottom-color:#176b91}
+.home-page .home-actions a:hover span{transform:translate(2px,-1px)}
+.home-page .home-contact p{margin-top:15px;color:#626a6e;font-size:.91rem}
+
+@media(max-width:800px){
+  .home-page .home-intro h1{font-size:2.72rem}
+  .home-page .home-about p{font-size:1.045rem;line-height:1.6}
+}
+@media(max-width:680px){
+  .home-page .home-intro h1{font-size:clamp(2.2rem,10.8vw,2.55rem);line-height:1.08}
+  .home-page .home-intro p{font-size:1rem}
+  .home-page .home-about p{font-size:1.01rem;line-height:1.62}
+  .home-page .home-portrait{aspect-ratio:4/5}
+  .home-page .home-portrait img{height:100%;object-position:58% 42%;transform:scale(1.18) translate(-3.5%,-8%)}
+  .home-page .home-actions{gap:30px}
+  .home-page .home-actions a{font-size:.96rem;padding-block:9px}
 }
