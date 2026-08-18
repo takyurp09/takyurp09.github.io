@@ -213,6 +213,53 @@ section+section{margin-top:28px}
   transform:rotate(-45deg);
 }
 
+/* Dense editorial CV grid: full history, substantially less scrolling. */
+.experience-page .layout{padding-top:38px;padding-bottom:42px}
+.experience-page main{max-width:none}
+.experience-page main>h1{margin-bottom:16px}
+.experience-page main section+section{margin-top:22px}
+.experience-page main section>h2{
+  margin:0 0 7px;
+  padding-bottom:6px;
+  border-bottom:1px solid var(--rule);
+}
+.experience-page .exp-list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  column-gap:30px;
+}
+.experience-page .exp-list li{
+  position:relative;
+  display:block;
+  min-width:0;
+  padding:10px 94px 11px 0;
+  min-height:89px;
+  border-bottom:1px solid #e8eaec;
+}
+.experience-page .exp-list li:first-child{padding-top:10px}
+.experience-page .exp-list li:last-child{padding-bottom:11px;border-bottom:1px solid #e8eaec}
+.experience-page .exp-list .date{
+  position:absolute;
+  top:12px;
+  right:0;
+  width:88px;
+  padding:0;
+  color:var(--link);
+  font-size:.75rem;
+  line-height:1.3;
+  text-align:right;
+  font-weight:500;
+}
+.experience-page .exp-details h3{font-size:.94rem;line-height:1.25;margin-bottom:2px}
+.experience-page .exp-org{font-size:.84rem;line-height:1.3;color:#40484e}
+.experience-page .exp-location{
+  margin-top:4px!important;
+  padding-left:12px;
+  font-size:.75rem;
+  line-height:1.3;
+}
+.experience-page .exp-location:before{left:1px;top:.35em;width:5px;height:5px;border-width:1px}
+
 footer{border-top:1px solid var(--rule);padding:24px 0 35px;color:var(--muted);font-size:.82rem}
 footer p{margin:0}
 
@@ -222,6 +269,9 @@ footer p{margin:0}
   .home-columns{flex-wrap:wrap}
   .home-columns section{flex:1 1 calc(50% - 14px)}
   .home-columns section:last-child{flex:1 1 100%}
+  .experience-page .layout{grid-template-columns:150px minmax(0,1fr);gap:28px}
+  .experience-page .exp-list{grid-template-columns:1fr}
+  .experience-page .exp-list li{min-height:0}
 }
 @media(max-width:680px){
   body{font-size:16px}
@@ -259,6 +309,24 @@ footer p{margin:0}
   .entry{grid-template-columns:1fr;gap:3px}
   .exp-list li{grid-template-columns:1fr;gap:5px;padding:15px 0 17px}
   .exp-list .date{padding-top:0;color:var(--link);font-size:.8rem;font-weight:500}
+  .experience-page .layout{padding-top:24px;padding-bottom:34px}
+  .experience-page main section+section{margin-top:24px}
+  .experience-page .exp-list{display:block}
+  .experience-page .exp-list li{
+    padding:10px 0 11px;
+    min-height:0;
+  }
+  .experience-page .exp-list li:first-child{padding-top:8px}
+  .experience-page .exp-list .date{
+    position:static;
+    display:block;
+    width:auto;
+    margin-bottom:3px;
+    font-size:.75rem;
+    line-height:1.3;
+    text-align:left;
+  }
+  .experience-page .exp-details h3{font-size:.95rem}
   h1{font-size:1.5rem}
 }
 
@@ -728,4 +796,75 @@ footer,
   h1{font-size:1.75rem;margin-bottom:24px}
   h2{font-size:1.25rem}
   footer,.home-page footer{width:calc(100% - 28px);padding-bottom:26px}
+}
+
+/* Experience responsive safeguards and tablet density. */
+@media(min-width:681px) and (max-width:900px){
+  .experience-page .layout{display:block;padding-top:34px}
+  .experience-page .profile{
+    display:grid;
+    grid-template-columns:140px minmax(0,1fr);
+    grid-template-rows:auto auto 1fr;
+    column-gap:24px;
+    margin-bottom:30px;
+    padding-bottom:24px;
+    border-bottom:1px solid var(--rule);
+  }
+  .experience-page .portrait-frame{grid-row:1/4;width:140px;height:175px}
+  .experience-page .profile h2{margin:0 0 5px}
+  .experience-page .profile-links{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:10px;padding-top:9px}
+  .experience-page .profile-links li{margin:0}
+  .experience-page .exp-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+@media(max-width:680px){
+  .experience-page,
+  .experience-page .wrap,
+  .experience-page .layout,
+  .experience-page main,
+  .experience-page section,
+  .experience-page .profile,
+  .experience-page .profile>*{min-width:0}
+  .experience-page .profile{grid-template-columns:96px minmax(0,1fr);column-gap:15px}
+  .experience-page .portrait-frame{width:96px;height:120px}
+  .experience-page .profile h2,
+  .experience-page .profile p,
+  .experience-page .profile-links,
+  .experience-page .profile-links a,
+  .experience-page .exp-details,
+  .experience-page .exp-details h3,
+  .experience-page .exp-details p{
+    max-width:100%;
+    overflow-wrap:anywhere;
+    word-break:normal;
+  }
+  .experience-page .profile-links{width:100%;gap:4px 12px;font-size:.86rem}
+  .experience-page .profile-links li{max-width:100%}
+  .experience-page .nav-toggle{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    min-height:38px;
+    margin-right:0;
+    padding:7px 9px;
+    border:1px solid #9aa2a7;
+    border-radius:2px;
+    background:#fff;
+    color:var(--ink);
+  }
+  .experience-page .menu-icon,
+  .experience-page .menu-icon:before,
+  .experience-page .menu-icon:after{
+    display:block;
+    width:15px;
+    height:1.5px;
+    background:currentColor;
+  }
+  .experience-page .menu-icon{position:relative}
+  .experience-page .menu-icon:before,
+  .experience-page .menu-icon:after{content:"";position:absolute;left:0}
+  .experience-page .menu-icon:before{top:-5px}
+  .experience-page .menu-icon:after{top:5px}
+  .experience-page .nav ul.open{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center}
+  .experience-page .nav li a{text-align:center;overflow-wrap:anywhere}
 }
