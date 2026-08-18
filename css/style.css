@@ -606,3 +606,92 @@ footer p{margin:0}
 @media(max-width:350px){
   .home-page .home-profile{display:block}
 }
+
+/* Site-wide editorial system: shared across About, Research, Teaching, and Experience. */
+:root{
+  --font-body:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --font-heading:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --ink:#20282d;
+  --muted:#687279;
+  --accent:#176b91;
+  --rule:#dedfdd;
+  --surface:#fdfcf9;
+  --soft:#f6f5f1;
+  --max:1060px;
+  --font:var(--font-body);
+  --text:var(--ink);
+  --link:var(--accent);
+  --nav:#343d42;
+}
+*{box-sizing:border-box}
+body{background:var(--surface);color:var(--ink);font-family:var(--font-body)}
+button,input,select,textarea{font:inherit}
+h1,h2,h3,.profile h2{
+  color:#17242c;
+  font-family:var(--font-heading);
+  font-weight:600;
+  letter-spacing:-.018em;
+}
+h1{font-size:2rem;line-height:1.15;margin-bottom:28px;padding-bottom:13px;border-color:var(--rule)}
+h2{font-size:1.32rem;line-height:1.28;margin-top:31px}
+h3{font-size:1.08rem;line-height:1.3}
+a{color:var(--accent)}
+.site-header{background:var(--surface);border-color:var(--rule)}
+.nav{min-height:66px;justify-content:center}
+.nav ul{gap:27px}
+.nav li a,
+.home-page .nav li a{
+  padding:20px 0 18px;
+  color:var(--nav);
+  font-family:var(--font-body);
+  font-size:1.02rem;
+  font-weight:500;
+  letter-spacing:-.005em;
+  border-bottom:2px solid transparent;
+}
+.nav li a:hover,.nav li a[aria-current=page],
+.home-page .nav li a:hover,.home-page .nav li a[aria-current=page]{
+  color:var(--accent);
+  border-bottom-color:var(--accent);
+}
+.layout{grid-template-columns:190px minmax(0,1fr);gap:62px;padding-top:52px;padding-bottom:66px}
+.portrait-frame{width:180px;height:225px;border-color:var(--rule);box-shadow:0 2px 7px rgba(20,28,32,.08)}
+.profile h2{font-size:1.18rem;margin-top:17px}
+.profile p{color:#4e5a61}
+.profile-links{border-color:var(--rule)}
+main{max-width:808px}
+.pub-list li,.exp-list li,.entry,.resource-list li{border-color:#e4e4e1}
+.note{background:var(--soft);border-left-color:var(--accent)}
+footer,
+.home-page footer{
+  width:min(var(--max),calc(100% - 40px));
+  margin-inline:auto;
+  padding:22px 0 32px;
+  border-top:1px solid var(--rule);
+  background:transparent;
+  color:var(--muted);
+  text-align:left;
+  font-family:var(--font-body);
+  font-size:.82rem;
+}
+.home-page{background:var(--surface);color:var(--ink)}
+.home-page .site-header{background:var(--surface);border-color:var(--rule)}
+.home-page .home-intro h1{font-family:var(--font-heading);color:#17242c}
+
+@media(max-width:800px){
+  .layout{grid-template-columns:165px minmax(0,1fr);gap:36px}
+  .portrait-frame{width:155px;height:194px}
+}
+@media(max-width:680px){
+  .nav,.home-page .nav{min-height:60px;justify-content:space-between}
+  .site-name,.home-page .site-name{display:block;color:var(--ink);font:600 .85rem var(--font-body);letter-spacing:.12em}
+  .nav-toggle,.home-page .nav-toggle{display:block;margin-right:-8px;padding:8px;border:0;background:transparent;color:var(--ink);font:600 .9rem var(--font-body)}
+  .nav ul,.home-page .nav ul{display:none;order:3;width:100%;gap:0;padding:8px 0 10px;border-top:1px solid var(--rule)}
+  .nav ul.open,.home-page .nav ul.open{display:flex}
+  .nav li a,.home-page .nav li a{padding:6px 5px 4px;font-size:.86rem}
+  .layout{padding-top:34px;padding-bottom:48px}
+  .portrait-frame{width:112px;height:140px}
+  h1{font-size:1.75rem;margin-bottom:24px}
+  h2{font-size:1.25rem}
+  footer,.home-page footer{width:calc(100% - 28px);padding-bottom:26px}
+}
