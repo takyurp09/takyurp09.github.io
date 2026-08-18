@@ -227,6 +227,7 @@ footer p{margin:0}
   .entry{grid-template-columns:1fr;gap:3px}
   h1{font-size:1.5rem}
 }
+
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 /* Editorial homepage — deliberately scoped to preserve inner pages. */
@@ -550,4 +551,58 @@ footer p{margin:0}
   .home-page .home-portrait img{height:100%;object-position:58% 42%;transform:scale(1.18) translate(-3.5%,-8%)}
   .home-page .home-actions{gap:30px}
   .home-page .home-actions a{font-size:.96rem;padding-block:9px}
+}
+
+/* Homepage v4: one compact, aligned identity composition. */
+.home-page .home-main{padding-top:54px;padding-bottom:58px}
+.home-page .home-composition{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 310px;
+  grid-template-areas:
+    "intro profile"
+    "about profile"
+    "actions profile";
+  column-gap:52px;
+  row-gap:26px;
+  align-items:start;
+}
+.home-page .home-intro{grid-area:intro;margin:0}
+.home-page .home-about{grid-area:about;padding-top:0}
+.home-page .home-profile{grid-area:profile}
+.home-page .home-contact{grid-area:actions;margin:4px 0 0;text-align:left}
+.home-page .home-actions{justify-content:flex-start}
+.home-page .home-actions a svg{
+  width:20px;
+  height:20px;
+  flex:0 0 20px;
+  fill:none;
+  stroke:var(--home-accent,#176b91);
+  stroke-width:1.65;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  transition:transform .18s ease;
+}
+.home-page .home-actions a:hover svg{transform:translateY(-1px)}
+.home-page .home-actions a span{font-size:inherit;color:inherit;transition:none}
+.home-page .home-actions a:hover span{transform:none}
+
+@media(max-width:800px){
+  .home-page .home-composition{grid-template-columns:minmax(0,1fr) 250px;column-gap:32px}
+}
+@media(max-width:680px){
+  .home-page .home-main{padding-top:36px;padding-bottom:48px}
+  .home-page .home-composition{
+    grid-template-columns:1fr;
+    grid-template-areas:"intro" "profile" "about" "actions";
+    row-gap:28px;
+  }
+  .home-page .home-intro{margin:0}
+  .home-page .home-profile{width:100%;display:grid;grid-template-columns:190px 1fr;gap:19px;align-items:start}
+  .home-page .home-contact{margin-top:0}
+}
+@media(max-width:420px){
+  .home-page .home-profile{grid-template-columns:145px 1fr;gap:16px}
+}
+@media(max-width:350px){
+  .home-page .home-profile{display:block}
 }
